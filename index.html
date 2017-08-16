@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my first form</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+    <body style="background-color:#AFEEEE">
+        <header>
+            <nav><p>Easypolls <a href="1.html">Home</a> | <a href="2.html">Help</a> |<a href="3.html">Sign in</a> | <a href="4.html">Contacts</a> | <a href="5.html">Sign up</a></p></nav>
+            <h1>Free online polls</h1><hr><br>
+        </header>
+        <article>
+            <h2>Sign up</h2>
+            <p><b>Start making online polls today</b><p>
+            <form method="POST" action="https://formspree.io/roksolana.babiy@meta.ua">
+                <label>Name:
+                    <input type="text" name="user-name" required placeholder="Your name here">
+                </label><br>
+                <label>Email:
+                    <input type="email" name="user-email" required placeholder="Your email here">
+                </label><br>
+                <label>Password:
+                    <input type="password" name="user-password" required placeholder="********"> 
+                </label><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">   
+            </form>
+        </article>
+           <div><h1>Poll: Are you happy?</h1>
+               <figure>
+                   <img src="img/happygirl.jpg" alt="happy girl">
+                   <figcaption>Giving thanks to God</figcaption>
+                </figure>
+                <form method="POST" action="https://formspree.io/roksolana.babiy@meta.ua">
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                            <label>First name:
+                                <input type="text" name="user-first name" required placeholder="Your name here">
+                            </label>
+                            <label>Last name:
+                                <input type="text" name="user-last-name" required placeholder="Your name here">
+                            </label>
+                            <label>Age: 
+                                <input type="number" id="age" name="user-age" value="20" min="12" max="100">
+                            </label><br>
+                            <label>Gender:
+                            </label><br>
+                            <label>Male
+                                <input type="radio" name="gender" value="male" checked>
+                            </label>
+                            <label>Female
+                                <input type="radio" name="gender" value="female">
+                            </label>
+                            <label>Other
+                            <input type="radio" name="gender" value="other">
+                            </label><br>
+                            <label>What do you do?
+                                <select>
+                                    <option value="s">Employed</option>
+                                    <option value="m">Unemployed</option>
+                                    <option value="l">Student</option>
+                                    <option value="xl">Businessman</option>
+                                    <option value="xl">Other</option>  
+                                </select>
+                            </label>
+                    </fieldset><br>
+                    <div><label><b><span style="color:red">1.A</span>re you happy?</b></label><br>
+                        <input type="checkbox" id="yes"  name="yes" value="yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="checkbox" id="fairlyhappy" name="fairly happy" value="fairly happy">
+                        <label for="fairlyhappy">Fairly happy</label><br>
+                        <input type="checkbox" id="fairlyunhappy" name="fairly unhappy" value="fairly unhappy">
+                        <label for="fairlyunhappy">Fairly unhappy</label><br>
+                        <input type="checkbox" id="nounhappy" name="no, I'm unhappy " value="no, I'm unhappy">
+                        <label for="nounhappy">No, I'm unhappy </label><br>
+                        <input type="checkbox" id="other1" name="other" value="other">
+                        <label for="other1">Other</label>
+                        <label><input type="text" name="user-comment" placeholder="Your comment here"></label><br></div>
+                    <div> 
+                        <label><b><span style="color:red">2.W</span>hat is the meaning of life?</b></label><br>
+                        <input type="radio" id="happy" name="meaning" value="happy">
+                        <label for="happy">Being happy</label><br>
+                        <input type="radio" id="family" name="meaning" value="family">
+                        <label for="family">Having a family</label><br>
+                        <input type="radio" id="fun" name="meaning" value="fun">
+                        <label for="fun">Having fun</label><br>
+                        <input type="radio" id="rich" name="meaning" value="rich">
+                        <label for="rich">Getting rich</label><br>  
+                        <input type="radio" id="old" name="meaning" value="old">
+                        <label for="old">Getting old</label><br>  
+                        <input type="radio" id="god" name="meaning" value="God">
+                        <label for="god">Serving God</label><br>  
+                        <input type="radio" id="friends" name="meaning" value="friends">
+                        <label for="friends">Having friends</label><br>  
+                        <input type="radio" id="travel" name="meaning" value="travel">
+                        <label for="travel">To boldy go where no one has gone before</label><br>
+                        <input type="radio" id="other2" name="other2" value="other2">
+                        <label for="other2">Other</label>
+                        <label><input type="text" name="user-comment" placeholder="Your comment here"></label><br>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">3.A</span>re you satisfied with your lifestyle?</b></label><br>
+                            <label>Yes
+                                <input type="radio" name="answer" value="yes">
+                            </label><br>
+                            <textarea name="textarea"  cols="25" rows="5" placeholder="If no, why not?"></textarea>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">3.W</span>hat One Thing Do You Want to Change about Your Life?</b><br>
+                            <input type="text" name="user-answer" placeholder="Your answer here">
+                        </label><br>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">4.W</span>hy are people not satisfied with what they have in life?</b><br>
+                        <textarea name="textarea"  cols="30" rows="12" placeholder="Why are people not satisfied with what they have in life?"></textarea>
+                        </label>
+                    </div>
+            </form>
+            <form method="POST" action="https://formspree.io/roksolana.babiy@meta.ua">
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">   
+             </form><br><hr>
+        </div>
+        <div><a href="table.html">Table</a></div>
+          <footer>
+            <p>BBS GmbH<br>Welschdorf 222<br>77761 Schiltach<br>Germany<br></p>
+            <p>Tel.: +49 (0) 78 37 56 - 0<br>Fax: +49 (0) 78 36 52 - 1450</p>
+        </footer>
+</body>
+</html>
+   
